@@ -17,6 +17,7 @@
   "scripts": {
     "install": "node-gyp-build",
     "package": "npm run prebuild && node helpers/create-tgz.js",
+    "tar": "node helpers/create-tgz.js",
     "prebuild": "run-script-os",
     "prebuild:win32": "npm run prebuild:ia32 && npm run prebuild:x64 && npm run build:stubs",
     "prebuild:darwin": "npm run prebuild:x64 && npm run build:stubs",
