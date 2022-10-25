@@ -1,3 +1,4 @@
+import { optionalCallExpression } from '@babel/types';
 import {
     Camera, CameraProperty, FileChangeEvent, ImageQuality,
     Option,
@@ -35,8 +36,8 @@ try {
         {
             [CameraProperty.ID.SaveTo]: Option.SaveTo.Host,
             //[CameraProperty.ID.SaveTo]: Option.SaveTo.Camera,
-            [CameraProperty.ID.ImageQuality]: ImageQuality.ID.LargeJPEGFine,
-            [CameraProperty.ID.WhiteBalance]: Option.WhiteBalance.Fluorescent
+            // [CameraProperty.ID.ImageQuality]: ImageQuality.ID.LargeJPEGFine,
+            // [CameraProperty.ID.WhiteBalance]: Option.WhiteBalance.Fluorescent
         }
     );
 
