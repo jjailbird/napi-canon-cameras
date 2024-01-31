@@ -1,5 +1,8 @@
 {
   "files.associations": {
-    "thread": "cpp"
+    "*.json": "jsonc",
+    "thread": "cpp",
+    "chrono": "cpp",
+    "utility": "cpp"
   }
 }

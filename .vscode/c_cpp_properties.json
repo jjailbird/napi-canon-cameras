@@ -5,7 +5,8 @@
             "includePath": [
                 "${workspaceFolder}/**",
                 "${vcpkgRoot}/x86-windows/include",
-                "${env:LOCALAPPDATA}/node-gyp/Cache/16.13.0/include/node"
+                "${env:LOCALAPPDATA}/node-gyp/Cache/16.13.0/include/node",
+                "${workspaceFolder}/node_modules/node-addon-api"
             ],
             "defines": [
                 "_DEBUG",
