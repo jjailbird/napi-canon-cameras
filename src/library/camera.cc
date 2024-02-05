@@ -260,7 +260,8 @@ namespace CameraApi {
             edsCamera_, kEdsPropID_Evf_OutputDevice, 0, sizeof(device), &device
         );
         if (error == EDS_ERR_OK) {
-            device |= kEdsEvfOutputDevice_PC;
+            // device |= kEdsEvfOutputDevice_PC;
+            device |= kEdsEvfOutputDevice_PC | kEdsEvfOutputDevice_TFT;
             error = EdsSetPropertyData(
                 edsCamera_, kEdsPropID_Evf_OutputDevice, 0, sizeof(device), &device
             );
@@ -278,7 +279,8 @@ namespace CameraApi {
             edsCamera_, kEdsPropID_Evf_OutputDevice, 0, sizeof(device), &device
         );
         if (error == EDS_ERR_OK) {
-            device &= ~kEdsEvfOutputDevice_PC;
+            // device &= ~kEdsEvfOutputDevice_PC;
+            device &= ~kEdsEvfOutputDevice_PC & ~kEdsEvfOutputDevice_TFT;
             error = EdsSetPropertyData(
                 edsCamera_, kEdsPropID_Evf_OutputDevice, 0, sizeof(device), &device
             );
